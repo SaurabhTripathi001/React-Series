@@ -1,3 +1,4 @@
+// There Are 10 Objects Hence 10 records will be displayed For Card1
 const Jobs = [
   {
     id: 1,

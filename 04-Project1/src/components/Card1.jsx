@@ -1,8 +1,7 @@
 import React from 'react'
 import { Bookmark } from 'lucide-react'
-
+// Card1 is basically showing Dynamic data from Jobs.js file. So we are passing props to Card1 component and then using those props to show the data in the card.
 const Card1 = (props) => {
-  console.log(props);
   return (
     <div className="card">
         <div className="top">
