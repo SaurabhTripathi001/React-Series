@@ -1,6 +1,6 @@
 import React from 'react'
 import { Bookmark } from 'lucide-react'
-
+//Making A Static Card That Will Show Data Entered By User And For Each Card Call Data Will BE Same As PAssed By User.
 const Card = () => {
   return (
     <div className="card">
