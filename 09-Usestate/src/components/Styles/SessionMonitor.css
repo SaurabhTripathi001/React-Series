@@ -1,0 +1,62 @@
+/* Main container */
+.session-monitor {
+  width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+.session-monitor h1 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Horizontal lines */
+.session-monitor hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* Section headings */
+.session-monitor h2 {
+  color: #333;
+  margin: 15px 0;
+}
+
+/* Status */
+.session-monitor h3 {
+  color: #555;
+  margin: 20px 0;
+}
+
+/* All buttons */
+.session-monitor button {
+  border: none;
+  padding: 10px 18px;
+  margin: 8px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Button hover */
+.session-monitor button:hover {
+  transform: translateY(-2px);
+  background-color: #1d4ed8;
+}
+
+/* Button click */
+.session-monitor button:active {
+  transform: scale(0.95);
+}
