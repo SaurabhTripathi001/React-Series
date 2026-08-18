@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body,html{
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+}
+
+input,button{
+  padding: 15px;
+  margin: 10px;
+}
