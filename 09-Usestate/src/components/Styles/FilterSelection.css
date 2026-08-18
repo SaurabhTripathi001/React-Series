@@ -1,0 +1,70 @@
+/* Main filter box */
+.filter-section {
+  width: 280px;
+  padding: 20px;
+  margin: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+.filter-section h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Filter heading */
+.filter-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Each checkbox row */
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.filter-option:hover {
+  background-color: #f3f6fa;
+}
+
+/* Checkbox */
+.filter-option input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Text beside checkbox */
+.filter-option span {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Selected values */
+.selected-values {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+}
+
+.selected-values strong {
+  color: #222;
+}
