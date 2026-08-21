@@ -64,7 +64,7 @@ const App = () => {
 
       <div className='p-10 bg-gray-950 lg:w-1/2 lg:border-l-2 '>
         <h1 className='text-4xl font-bold'>Recent Notes:</h1>
-        <div className='flex gap-5 flex-wrap items-start justify-start mt-5 overflow-auto h-full'>
+        <div className='flex gap-5 flex-wrap items-start justify-start mt-5 overflow-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent h-full'>
           {task.map(function(elem,idx){
             return(
               <div
