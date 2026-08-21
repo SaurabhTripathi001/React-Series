@@ -1,19 +1,20 @@
-import React from 'react'
 import { useState } from 'react';
-import { X } from 'lucide-react';
 const App = () => {
 
   const [title,setTitle] = useState()
   const [details, setDetails] = useState('')
   const [task, setTask] = useState([])
+  //For Taking Confirmation to submit blank node
+  const [showConfirm, setShowConfirm] = useState(false)
+  
   const submitHandler = (e)=>{
     e.preventDefault();
-    setTitle("")
-    setDetails("")
-    const copyTask=[...task]
-    copyTask.push({title,details})
-    setTask(copyTask) 
-    console.log(task)  
+    // Check if both title and details are empty
+    if (title.trim() === '' && details.trim() === '') {
+      setShowConfirm(true);
+      return;
+    }
+    createNote();
   }
 
   const deleteNode=(idx)=>{
@@ -26,6 +27,16 @@ const App = () => {
     // Again I Wannaa Show Only Remaining div
     setTask(copyTask)
   }
+
+  const createNote = () => {
+    const copyTask = [...task];
+    copyTask.push({title,details});
+    setTask(copyTask);  
+    setTitle('');
+    setDetails('');
+    setShowConfirm(false);
+  };
+
   return (
     <div className='h-screen lg:flex bg-black text-white '>    
       <form onSubmit={(e)=>{
@@ -93,6 +104,36 @@ const App = () => {
           })}
         </div>        
       </div>
+      {showConfirm && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="bg-white text-black p-6 rounded-xl w-80 shadow-2xl">
+      <h2 className="text-xl font-bold mb-3">Empty Note</h2>
+      <p className="text-gray-600 mb-6">
+        Are you sure you want to create an empty note?
+      </p>
+
+      <div className="flex justify-end gap-3">
+
+        <button
+          type="button"
+          onClick={() => setShowConfirm(false)}
+          className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400"
+        >
+          No
+        </button>
+
+        <button
+          type="button"
+          onClick={createNote}
+          className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
+        >
+          Yes
+        </button>
+
+      </div>
+    </div>
+  </div>
+)}
     </div>
   )
 }
