@@ -22,7 +22,7 @@ const App = () => {
     const copyTask=[...task]
     // Recieveing Index Value Of That Div Whose Button Is Clicked
     console.log("Deleted Index:",idx)
-    // Breaking The Div Whose Index Is Recieved From Idex Value To 1 Element
+    // Breaking The Div Whose Index Is Recieved From Idx Value To 1 Element
     copyTask.splice(idx,1)
     // Again I Wannaa Show Only Remaining div
     setTask(copyTask)
@@ -90,9 +90,9 @@ const App = () => {
                   overflow-hidden'
                 > 
                   <div className='w-full min-h-0'>
-                    <h3 className='w-full border-b-amber-400 leading-tight text-lg font-bold text-gray-900 break-words line-clamp-2'>{elem.title}</h3>
+                    <h3 className='w-full border-b-amber-400 leading-tight text-lg font-bold text-gray-900  line-clamp-2'>{elem.title}</h3>
                     <div className='h-1 w-1/2 bg-red-500 rounded-full mt-2'></div>
-                    <p className='w-full mt-2 leading-tight font-medium text-gray-500 break-words max-h-28 overflow-y-auto pr-1 note-scrollbar scrollbar-thin scrollbar-thumb-red-400 scrollbar-track-transparent'>{elem.details}</p>
+                    <p className='w-full mt-2 leading-tight font-medium text-gray-500  max-h-28 overflow-y-auto pr-1 note-scrollbar scrollbar-thin scrollbar-thumb-red-400 scrollbar-track-transparent'>{elem.details}</p>
                   </div>
             
                   <button
