@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #387485;
+}
+
+/* Page container */
+.page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page heading */
+.page h1 {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
