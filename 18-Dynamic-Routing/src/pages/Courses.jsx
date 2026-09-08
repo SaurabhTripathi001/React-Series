@@ -8,7 +8,8 @@ const Courses = () => {
     
   return (
     <div>
-        <h1>Course Page</h1>
+      
+        <h1>Course Page: To Show Dynamic Routing</h1>
     </div>
   )
 }

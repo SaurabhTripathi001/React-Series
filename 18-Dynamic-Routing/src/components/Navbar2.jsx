@@ -20,7 +20,15 @@ const Navbar2 = () => {
                 navigate(-1)
             }}
             className='bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scale-95 '>
-            Back To Previous Page
+             Previous Page
+        </button>
+        {/* On Click Of Button Want To Navigate To Next Page */}
+        <button 
+            onClick={()=>{
+                navigate(+1)
+            }}
+            className='bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scale-95 '>
+            Next Page
         </button>
     </div>
   )
