@@ -1,0 +1,69 @@
+/* Complete Popular Products Section */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 50px 40px;
+
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+
+/* Popular Products Heading */
+.popular h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #171717;
+
+    margin-bottom: 10px;
+}
+
+
+/* Line below heading */
+.popular hr {
+    width: 150px;
+    height: 4px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #ff4141;
+
+    margin-bottom: 40px;
+}
+
+
+/* Container holding ALL Item components */
+.popular-item {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    /* If there are many products,
+       they automatically move to next row */
+    flex-wrap: wrap;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .popular {
+        padding: 30px 15px;
+    }
+
+    .popular h2 {
+        font-size: 28px;
+    }
+
+    .popular-item {
+        gap: 15px;
+    }
+}
