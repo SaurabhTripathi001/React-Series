@@ -1,3 +1,5 @@
+//Child Of Popular
+//Recieveing Data from its parent i.e popular
 import React from 'react'
 import './Item.css'
 

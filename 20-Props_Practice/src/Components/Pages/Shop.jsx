@@ -1,3 +1,5 @@
+//Parent of Popular
+//Child of App.jsx
 import React from 'react'
 import Popular from "../Popular/Popular";
 

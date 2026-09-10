@@ -1,3 +1,7 @@
+//Popular is parent of Item That is calling item and 
+//popular is recieving data from the assets/data.js and this data will be shown in browser
+//so its child is item that has structure and data is passed from here to item
+//parent of popular is home page i.e shop
 import React from 'react'
 import './Popular.css'
 import data_product from '../../Assets/data'
